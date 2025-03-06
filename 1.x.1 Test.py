@@ -1,17 +1,25 @@
-Input1=input("Please write a sentance: ")
-dict=Input1.split(" ")
+sentence = input("Please write a sentence: ")
 
-words = Input1.lower()
-word_count = len(Input1.split())
+words = sentence.split()
 
-list=dict
 
-for x in list:
-    dict
-    
+word_count = len(words)
+print(f"Word count is: {word_count}")
 
-print (f"Word count is: {word_count}")
-print (dict)
-print (f"The longest word is" ,)
 
-#WIP
+word_frequency = {}
+for word in words:
+    word = word.lower() 
+    if word in word_frequency:
+        word_frequency[word] += 1
+    else:
+        word_frequency[word] = 1
+
+
+print("Word frequencies:")
+for word, count in word_frequency.items():
+    print(f"{word} - {count}")
+
+
+longest_word = max(words, key=len)
+print(f"The longest word is: {longest_word}")
