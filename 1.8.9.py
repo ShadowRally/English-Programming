@@ -24,7 +24,7 @@ while True:
 
     elif MenuChoice=="2": #Subtraction
         def Subtraction(Subtraction1,Subtraction2):
-            return Subtraction1 - Subtraction
+            return Subtraction1 - Subtraction2
 
         try:
             Subtraction1 = int (input("Enter a number: "))
