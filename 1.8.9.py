@@ -14,7 +14,7 @@ while True:
 
     if MenuChoice=="1": #Addition
         def Addition(Addition1,Addition2):
-            return Addition1 + Addition
+            return Addition1 + Addition2
         try:
             Addition1 = int (input("Add a number: "))
             Addition2 = int (input("Add another: "))
