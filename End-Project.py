@@ -1,15 +1,15 @@
 import random
 
-def User_choice():
+def user_choice():
     print("Choose one: Rock, Paper, or Scissors")
     user_input = input("Your choice: ").strip().lower()
     if user_input in ["rock", "paper", "scissors"]:
         return user_input
     else:
         print("Invalid choice. Please try again.")
-        return User_choice()
+        return user_choice()
 
-def Computer_choice():
+def computer_choice():
     return random.choice(["rock", "paper", "scissors"])
 
 def Winner(user_choice, computer_choice):
@@ -24,8 +24,8 @@ def Winner(user_choice, computer_choice):
 
 def play_game():
     print("Welcome to Rock, Paper, Scissors!")
-    user_choice = User_choice()
-    computer_choice = Computer_choice()
+    user_choice = user_choice()
+    computer_choice = computer_choice()
     print(f"You chose: {user_choice}")
     print(f"Computer chose: {computer_choice}")
     result = Winner(user_choice, computer_choice)
