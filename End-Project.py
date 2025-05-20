@@ -49,6 +49,7 @@ def play_game():
             rounds = 3
     except ValueError:
         rounds = 3
+    print(f"You will play {rounds} rounds.")
 
     score = {"win": 0, "lose": 0, "tie": 0}
 
