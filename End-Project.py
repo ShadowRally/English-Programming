@@ -9,7 +9,7 @@ WIN_RULES = {
     "lizard": ["spock", "paper"],
     "spock": ["scissors", "rock"]
 }
-
+    
 def get_user_choice():
     print(f"Choose one: {', '.join(CHOICES).title()}")
     user_input = input("Your choice: ").strip().lower()
