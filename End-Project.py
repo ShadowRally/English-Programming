@@ -40,8 +40,25 @@ def print_result(user_choice, computer_choice, result):
     else:
         print("You lose!")
 
+def print_instructions():
+    print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
+    print("Instructions:")
+    print("1. Rock crushes Scissors.")
+    print("2. Rock crushes Lizard.")
+    print("3. Paper disproves Spock.")
+    print("4. Paper covers Rock.")
+    print("5. Scissors cuts Paper.")
+    print("6. Scissors decapitates Lizard.")
+    print("7. Lizard eats Paper.")
+    print("8. Lizard poisons Spock.")
+    print("9. Spock smashes Scissors.")
+    print("10. Spock vaporizes Rock.")
+
 def play_game():
     print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
+    want_instructions = input("Do you want to see the instructions? (yes/no): ").strip().lower()
+    if want_instructions == "yes":
+        print_instructions()
     rounds = input("How many rounds would you like to play? (default 3): ").strip()
     try:
         rounds = int(rounds)
