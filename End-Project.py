@@ -1,4 +1,5 @@
 import random
+# Welcome to Rock, Paper, Scissors, Lizard, Spock.
 
 CHOICES = ["rock", "paper", "scissors", "lizard", "spock"]
 
