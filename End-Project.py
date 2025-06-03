@@ -95,5 +95,5 @@ def play_game():
         else:
             print("Invalid input. Please enter 'yes' or 'no'.")
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     play_game()
